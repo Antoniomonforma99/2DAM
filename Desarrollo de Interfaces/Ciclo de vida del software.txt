@@ -1,0 +1,6 @@
+Análisis
+Diseño
+Implementación
+Pruebas
+Explotación
+Mantenimiento
