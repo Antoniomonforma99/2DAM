@@ -1,0 +1,6 @@
+Seleccionar aquellas biografias que hayan recibido el Turing Award
+ente los años 1995 y 2005 (ambos incluidos).
+
+db.bios.find({ awards : {$elemMatch : {award : "Turing Award", year : {$gte : 1995, $lte : 2005}}}}).pretty();
+
+Aquellos elementos que tengan en el array de premios entre 2 y 3 elementos.
