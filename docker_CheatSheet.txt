@@ -1,0 +1,18 @@
+docker run <nombre> si no tienes la imagen la descarga
+
+docker ps lista los contenedores en ejecucion
+
+docker ps -a lista los contenedores detenidos y en ejecucion
+
+docker run -it --name <nombre>  <imagen> ejecuta un contenedor interactivo 
+
+docker rm <nombre>/<id> eliminamos el contenedor si ponemos -f al final se elimina estando en ejecucion
+
+docker exec -it <nombre> /bin/sh nos conectamos a un contenedor en ejecucion
+
+docker rm $(docker ps -aq) eliminar todos los contenedores detenidos, -f delante de $ para borrar todos los contenedores
+
+docker run -d ejecuta un contenedor en segundo plano
+
+-p 8080:80 redirigimos un contenedor al puerto 8080 
+
